@@ -1,0 +1,43 @@
+.plus-field {
+    float: right;
+    margin-bottom: 10px;
+}
+.minus-field {
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.answer-check .MuiButtonBase-root {
+    padding: 9px 0;
+}
+.questions-form {
+    position: relative;
+}
+.simple-answers{
+    margin-bottom: 25px;
+}
+.questions-submit{
+    float: right;
+    margin-bottom: 15px;
+}
+.ck-content {
+    width: 100%;
+}
+.module-name-select {
+    max-width: 400px;
+}
+@media only screen and (max-width: 480px) {
+    .module-name-select {
+        margin-bottom: 10px;
+    }
+}
+.input-word {
+    font-weight: bold !important;
+}
+
+.input-word:before {
+    content: '{{';
+}
+.input-word:after {
+    content: '}}';
+}

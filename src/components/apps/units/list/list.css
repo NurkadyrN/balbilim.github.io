@@ -1,0 +1,11 @@
+.list-classroom {
+    margin: auto;
+}
+.list-classroom-container {
+    padding: 20px;
+}
+.list-add-button .fa-plus {
+    vertical-align: bottom;
+    margin-left: 5px;
+    margin-right: 0;
+}

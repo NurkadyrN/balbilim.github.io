@@ -1,0 +1,35 @@
+.row-field .help-text{
+    margin-top: 5px;
+    display: block;
+}
+.MuiFormControl-root {
+    width: 100%;
+}
+
+.edit-related {
+    padding-left: 0px;
+}
+
+.edit-related a {
+    font-size: 33px;
+    color: green;
+}
+
+.error-custom .rw-widget-container{
+    border-color: #f44336 !important;
+}
+.MuiFormHelperText-root {
+    color: rgba(0, 0, 0, 0.54);
+    margin: 0;
+    font-size: 14px !important;
+    margin-top: 3px;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+}
+.MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    line-height: 25px;
+}

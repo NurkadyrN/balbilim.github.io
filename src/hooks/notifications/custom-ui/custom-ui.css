@@ -1,0 +1,7 @@
+.react-confirm-alert {
+    width: 85%;
+}
+.react-confirm-alert-overlay {
+    z-index: 1500 !important;
+    background: rgba(0,0,0,0.4) !important;
+}

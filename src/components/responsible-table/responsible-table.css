@@ -1,0 +1,81 @@
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.responsiveTable {
+    width: 100%;
+}
+
+.responsiveTable td .tdBefore {
+    display: none;
+}
+
+.action-custom {
+    width: 1px;
+}
+
+.icofont {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 40em) {
+    /*
+      Force table elements to not behave like tables anymore
+      Hide table headers (but not display: none;, for accessibility)
+    */
+    .responsiveTable table,
+    .responsiveTable thead,
+    .responsiveTable tbody,
+    .responsiveTable th,
+    .responsiveTable td,
+    .responsiveTable tr {
+        display: block;
+    }
+
+    .responsiveTable thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        border-bottom: 2px solid #333;
+    }
+
+    .responsiveTable tbody tr {
+        border-bottom: 1px solid #8f8f8f;
+        border-left: 1px solid #c1c1c1;
+        border-right: 1px solid #c1c1c1;
+        padding: 0 !important;
+    }
+
+    .responsiveTable tbody tr:first-child {
+        border-top: 1px solid #8f8f8f;
+    }
+
+    .responsiveTable td.pivoted {
+        /* Behave like a "row" */
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: 1px solid #c3c2c2 !important;
+        position: relative;
+        padding-left: calc(50% + 10px) !important;
+        text-align: left !important;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+    }
+
+    .responsiveTable td .tdBefore {
+        /* Now like a table header */
+        position: absolute;
+        display: block;
+
+        /* Top/left values mimic padding */
+        left: 1rem;
+        width: calc(50% - 20px);
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+        text-align: left !important;
+        font-weight: 600;
+    }
+}
